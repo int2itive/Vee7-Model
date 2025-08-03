@@ -1,0 +1,238 @@
+@import url(https://api.fonts.coollabs.io/css?family=Raleway:300,900);
+@import url('https://api.fonts.coollabs.io/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display|Quattrocento+Sans');
+
+*,
+::before,
+::after {
+	box-sizing: border-box;
+}
+
+html, body {
+	background: black;
+	color: white;
+/*	width: 100vw;*/
+	height: 100vh;
+/*	overflow-x: hidden;*/
+	/*font-family: 'Playfair Display', serif;	*/
+	font-family: 'Raleway', serif;	
+}
+
+body {
+/*	margin: 0;*/
+}
+
+article {
+	padding-inline-start: .5rem;
+	padding-top: 2.5rem;
+}
+
+.header {
+	position: static;
+	height: 100vh;
+	width: 100vw;
+}
+
+.mask {
+	width: 100%;
+	background: black;
+	position: abolute;
+	bottom: -5%;
+	height: 15%;
+}
+
+.maintitle {
+	width: 100%;
+	color: white;
+	text-decoration: none;
+	position: absolute;
+	bottom: 10%;
+	right: 8%;
+	font-size: 5vmax;
+	text-align: right;
+	z-index: 10;
+}
+
+.maintitle::before {
+	background: #FFCC00;
+	content: "";
+	position: absolute;
+	z-index: -2;
+	right: 0;
+	bottom: -20px;
+	height: 10px;
+	width: 60%;
+}
+
+.publication {
+	position: absolute;
+	line-height: 20px;
+	left: 2%;
+	top: 1%;
+}
+
+.publication::before {
+ 	display: inline-block;
+	content: '';
+	position: relative;
+	left: 0;
+	top: 1.9vmin;
+	width: 3.6vmin;
+	height: 5vmin;
+	background: #FFCC00;
+	background: hsl(40, 65%, 42%);;
+}
+
+.publication::after {
+	display: inline-block;
+	position: absolute;
+	left: .67vmin;
+	top: 2.5vmin;
+	content: '';
+	width: 2.33vmin;
+	height: 3.9vmin;
+	background: black;
+}
+
+.date {
+	position: absolute;
+	right: 5vmin;
+	top: 5vmin;
+}
+
+.article-body {
+	position: relative;
+	background: black;
+	width: 100%;
+	/*height: 90vh;*/
+	z-index: 2;
+	/*display: flex;*/
+	/*flex-wrap: wrap-reverse;*/
+/*	overflow: auto;*/
+}
+
+h1 {
+	font-size: 3.5vmax;
+}
+
+.textwords {
+	position: relative;
+	/*top: 20%;*/
+	width: 70vw;
+    width: 100%;
+	max-width: 850px;
+	background: black;
+	padding: 10px 10px 10px 20px;
+	z-index: 5;
+}
+
+.textwords::before {
+	top: 0;
+	background: #FFCC00;
+	content: "";
+	position: absolute;
+	left: 0;
+	width: 10px;
+	height: 100%;
+	background: hsl(40, 65%, 42%);
+}
+
+.textwords h1 {
+	margin-block: .5rem;
+}
+
+.textwords p, span, a {
+	font-size: 16px;
+	line-height: auto;
+	font-family: 'Quattrocento Sans', sans-serif;
+}
+
+.textwords a {
+	color: white;
+	color: hsl(40, 65%, 62%);
+	text-decoration: none	;
+}
+
+.textwords p {
+	margin-block-start: 0;
+	margin-block-end: .25rem;
+}
+
+.textwords-alt {
+	padding: 10px 25px 10px 10px;
+    align-self: flex-end;
+}
+
+.textwords-alt::before {
+	top: 0;
+	left: auto;
+	background: #FFCC00;
+	content: "";
+	position: absolute;
+	right: 5px;
+	width: 10px;
+	height: 100%;
+}
+
+.words--extra {
+	/*position: absolute;*/
+	/*bottom: -5px;*/
+	width: 83.5vh;
+    width: 100%;
+    margin-block: 4rem;
+	padding-inline-start: .25rem;
+    padding-inline-end: 1rem;
+}
+#text2 {
+	top: 55%;
+}
+
+#text3 {
+	top: 30%;
+}
+
+.sb-image {
+	position: absolute;
+	min-width: 500px;
+	bottom: 0;
+	width: 70%;
+	height: 95%;
+	background-size: cover;
+	background-position: center;
+	z-index: 1;
+}
+
+#sb-img1 {
+	box-shadow: inset -25px 25px 50px 0px #000;
+	background-image: url('https://ik.imagekit.io/ghow2otb3rc/Projects/SoM/Artists/kdk--prof-img-001__T1ICAJ9y0.jpg');
+	transform: scaleX(-1);
+	background-position: center;
+}
+
+.left {
+	left: 0;
+}
+
+.right {
+	right: 0;
+	text-align: right;
+}
+
+.footer {
+	padding-top: 3vh;
+/*	width: 100vw;*/
+	height: 10vh;
+	text-align: center;
+	line-height: 3vh;
+	font-family: 'Quattrocento Sans', sans-serif;
+}
+
+p {
+	font-family: 'DM Sans';
+}
+
+#section2 {
+	display: flex;
+	justify-content: flex-end;
+}
