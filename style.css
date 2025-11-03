@@ -229,7 +229,8 @@ h1 {
 }
 
 p {
-	font-family: 'DM Sans';
+  font-family: 'DM Sans';
+  font-size: .965rem;
 }
 
 #section2 {
