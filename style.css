@@ -230,6 +230,9 @@ h1 {
 
 p {
   font-family: 'DM Sans';
+}
+
+.footer p {
   font-size: .965rem;
 }
 
